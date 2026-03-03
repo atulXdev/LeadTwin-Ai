@@ -76,7 +76,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://leadtwin-ai.vercel.app",
+        "https://lead-twin-ai.vercel.app",
         "https://leadtwin-ai.onrender.com",
         "*" # Allow all for MVP testing if needed
     ],
