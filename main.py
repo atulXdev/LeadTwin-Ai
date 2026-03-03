@@ -74,7 +74,12 @@ app = FastAPI(
 # CORS for frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Restrict in production
+    allow_origins=[
+        "http://localhost:3000",
+        "https://leadtwin-ai.vercel.app",
+        "https://leadtwin-ai.onrender.com",
+        "*" # Allow all for MVP testing if needed
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
